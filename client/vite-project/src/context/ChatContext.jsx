@@ -107,6 +107,7 @@ export const ChatContextProvider = ({ children, user }) => {
             setPotentialChats(pChats);
             setAllUsers(response);
             console.log("potential chats: ",potentialChats);
+            console.log(response);
         }
         getUsers()
     }, [userChats])
