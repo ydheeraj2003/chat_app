@@ -1,4 +1,4 @@
-export const baseUrl="https://chat-app-3hnv.onrender.com/";
+export const baseUrl="https://chat-app-server-57nu.onrender.com";
 
 
 export const postRequest =async(url, body) => {
