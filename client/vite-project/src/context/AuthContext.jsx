@@ -43,7 +43,7 @@ export const AuthContextProvider = ({children}) => {
     const registerUser = useCallback(async(e) => {
        e.preventDefault();
        setIsRegisterLoading(true);
-       const response = await postRequest(`${baseUrl}/users/register`, JSON.stringify(registerInfo))
+       const response = await postRequest(`${baseUrl}/api/users/register`, JSON.stringify(registerInfo))
        setIsRegisterLoading(false);
        if (response.error)
        {
@@ -63,7 +63,7 @@ export const AuthContextProvider = ({children}) => {
     const loginUser =useCallback(async(e)=>{
        e.preventDefault();
        setIsLoginLoading(true);
-       const response = await postRequest(`${baseUrl}/users/login`, JSON.stringify(loginInfo))
+       const response = await postRequest(`${baseUrl}/api/users/login`, JSON.stringify(loginInfo))
        console.log("response",response);
        setIsLoginLoading(false);
        if (response.error)
