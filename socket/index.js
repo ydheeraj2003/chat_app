@@ -1,7 +1,7 @@
 
 const { Server } = require("socket.io");
 
-const io = new Server({ cors: "https://chat-app-2-nobm.onrender.com/" });
+const io = new Server({ cors: "https://chat-app-frontend-g3f7.onrender.com" });
 
 onlineUsers=[];
 io.on("connection", (socket) => {
